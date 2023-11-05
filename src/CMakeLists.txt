@@ -1,0 +1,13 @@
+add_library(AccelCalibrationCalculator AccelCalibrationCalculator.cpp)
+add_library(IMUDataReader IMUDataReader.cpp)
+add_library(GyroCalibrationCalculatorA GyroCalibrationCalculatorA.cpp)
+add_library(ErrorCompensation ErrorCompensation.cpp)
+add_library(Plotter Plotter.cpp)
+add_library(GyroCalibrationCalculatorB GyroCalibrationCalculatorB.cpp)
+
+target_include_directories(AccelCalibrationCalculator PUBLIC ../include)
+target_include_directories(IMUDataReader PUBLIC ../include)
+target_include_directories(GyroCalibrationCalculatorA PUBLIC ../include)
+target_include_directories(ErrorCompensation PUBLIC ../include)
+target_include_directories(Plotter PUBLIC ../include)
+target_include_directories(GyroCalibrationCalculatorB PUBLIC ../include)
